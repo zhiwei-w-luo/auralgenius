@@ -9,7 +9,7 @@ const Banner = () => {
           Note Taking
         </h1>
         <p className="mt-8 text-center text-xl font-light tracking-tight lg:text-3xl">
-          NotesGPT seamlessly converts your voice notes into{' '}
+        AuralGenius seamlessly converts your voice notes into{' '}
           <span className="font-bold">
             organized <br className="hidden lg:inline-block" />
             summaries
