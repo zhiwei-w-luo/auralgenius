@@ -1,6 +1,5 @@
 'use client';
 
-import { useEffect } from 'react';
 import { useUser } from '@clerk/clerk-react';
 import Link from 'next/link';
 import { UserNav } from './UserNav';
@@ -10,12 +9,6 @@ const Header = () => {
   const { isLoading } = useConvexAuth();
   const { user } = useUser();
 
-  useEffect(() => {
-    if (!isLoading && user) {
-      window.location.href = '/record'; // 使用 window.location 进行重定向
-    }
-  }, [isLoading, user]);
-  
   return (
     <div className="container relative m-0 mx-auto py-10 md:px-10">
       <div className="max-width flex items-center justify-between">
