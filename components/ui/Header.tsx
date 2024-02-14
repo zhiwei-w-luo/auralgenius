@@ -1,5 +1,7 @@
 'use client';
 
+import { useEffect } from 'react';
+import { useRouter } from 'next/router'; // 导入 useRouter 钩子
 import { useUser } from '@clerk/clerk-react';
 import Link from 'next/link';
 import { UserNav } from './UserNav';
@@ -8,6 +10,14 @@ import { useConvexAuth } from 'convex/react';
 const Header = () => {
   const { isLoading } = useConvexAuth();
   const { user } = useUser();
+  const router = useRouter(); // 使用 useRouter 钩子
+
+  useEffect(() => {
+    // 如果不在加载状态且用户信息已加载，则导航到 /record 页面
+    if (!isLoading && user) {
+      router.push('/record');
+    }
+  }, [isLoading, user, router]); // 依赖数组包括 isLoading, user, 和 router
 
   return (
     <div className="container relative m-0 mx-auto py-10 md:px-10">
