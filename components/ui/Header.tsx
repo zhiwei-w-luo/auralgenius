@@ -15,7 +15,7 @@ const Header = () => {
         {/* logo */}
         <Link className="flex w-fit items-center gap-[2px]" href="/dashboard">
           <img
-            src="/logo.svg"
+            src="/logo.png"
             width={50}
             height={50}
             alt="logo"
