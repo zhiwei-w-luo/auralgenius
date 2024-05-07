@@ -91,7 +91,7 @@ const ProfileHomePage = ({
       }
     
       const account = accounts[0];
-      const contractAddress = '0x3430549b8d1BF99BBe6D0425C6741da34DC11c0d';
+      const contractAddress = '0x3A693667835d8eF488752d712342C8fBa594CfD9';
       const default_ref_address = '0x75224eD2b99A8e09a374bE4aA0fa1641a12323aC';
       const contract = new web3.eth.Contract(JSON.parse(agzeusabi), contractAddress);
     
