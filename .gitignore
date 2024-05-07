@@ -1,8 +1,11 @@
 # Build and Release Folders
 bin-debug/
 bin-release/
-[Oo]bj/
-[Bb]in/
+bin-release/
+node_modules/
+node_modules/*
+.next/
+.next/*
 
 # Other files and folders
 .settings/

@@ -15,7 +15,7 @@ const Header = () => {
         {/* logo */}
         <Link className="flex w-fit items-center gap-[2px]" href="/dashboard">
           <img
-            src="/logo.png"
+            src="/logo.svg"
             width={50}
             height={50}
             alt="logo"
@@ -46,6 +46,7 @@ const Header = () => {
               <UserNav
                 image={user?.imageUrl}
                 name={user?.fullName!}
+                wallet={user?.primaryWeb3Wallet?.web3Wallet!}
                 email={user?.primaryEmailAddress?.emailAddress!}
               />
             </>

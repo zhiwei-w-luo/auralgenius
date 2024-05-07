@@ -11,6 +11,7 @@ const Page = async () => {
     { token },
   );
 
+
   return <ActionItemsPage preloadedItems={preloadedItems} />;
 };
 

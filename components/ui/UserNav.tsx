@@ -18,13 +18,23 @@ export function UserNav({
   image,
   name,
   email,
+  wallet,
 }: {
   image: string;
   name: string;
   email: string;
+  wallet: string;
 }) {
   const { signOut } = useClerk();
   const router = useRouter();
+
+  function formatWallet(walletAddress) {
+    if (!walletAddress || walletAddress.length < 14) {
+      return walletAddress; // 如果地址长度不足，直接返回原始地址
+    }
+    // 截取前6个字符和后8个字符，并用两个点连接
+    return `${walletAddress.substring(0, 12)} ... ${walletAddress.substring(walletAddress.length - 12)}`;
+  }
 
   return (
     <DropdownMenu>
@@ -44,7 +54,7 @@ export function UserNav({
             <p className="text-sm font-medium leading-none text-black">
               {name}
             </p>
-            <p className="text-xs leading-none text-black">{email}</p>
+            <p className="text-xs leading-none text-black">{formatWallet(wallet)}</p>
           </div>
         </DropdownMenuLabel>
         <DropdownMenuSeparator />
@@ -52,6 +62,12 @@ export function UserNav({
           <DropdownMenuItem className="hover:cursor-pointer hover:bg-gray-200">
             <Paintbrush2 className="mr-2 h-4 w-4 text-black" />
             <span className="text-black">Dashboard</span>
+          </DropdownMenuItem>
+        </Link>
+        <Link href="/account">
+        <DropdownMenuItem className="hover:cursor-pointer hover:bg-gray-200">
+            <Paintbrush2 className="mr-2 h-4 w-4 text-black" />
+            <span className="text-black">My Profile</span>
           </DropdownMenuItem>
         </Link>
         <DropdownMenuItem
