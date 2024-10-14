@@ -84,9 +84,9 @@ const ProfileHomePage = ({
       }
     
       const networkId = await web3.eth.net.getId();
-      const FilecoinMainnetID = 314      ; // Optimism Mainnet ID
+      const FilecoinMainnetID = 314      ; // Filecoin Mainnet ID
       if (networkId !== FilecoinMainnetID) {
-        window.alert('Please connect to the Optimism network in MetaMask.');
+        window.alert('Please connect to the Filecoin network in MetaMask.');
         return;
       }
     
