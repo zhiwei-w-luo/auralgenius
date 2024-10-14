@@ -187,7 +187,7 @@ const ProfileHomePage = ({
             />
           </div>
           <p className="mb-2 text-sm text-gray-600">Poseidon Magic Brush</p>
-          <p className="text-lg font-semibold text-gray-900">Price 0.00001 ETH</p>
+          <p className="text-lg font-semibold text-gray-900">Price 0.00001 FIL</p>
           <button
             className="mt-2 rounded bg-dark text-white px-4 py-2 text-sm uppercase shadow-sm hover:bg-dark-hover"
             onClick={()=>handleMint('0x09B7c0380EcD9343DE07aD364c1956c09144D07f')}
@@ -207,7 +207,7 @@ const ProfileHomePage = ({
             />
           </div>
           <p className="mb-2 text-sm text-gray-600">Demeter Magic Brush</p>
-          <p className="text-lg font-semibold text-gray-900">Price 0.00001 ETH</p>
+          <p className="text-lg font-semibold text-gray-900">Price 0.00001 FIL</p>
           <button
             className="mt-2 rounded bg-dark text-white px-4 py-2 text-sm uppercase shadow-sm hover:bg-dark-hover"
             onClick={()=>handleMint('0xF855D299FA5160036475F4fD76bF253837C1EBA2')}
@@ -227,7 +227,7 @@ const ProfileHomePage = ({
             />
           </div>
           <p className="mb-2 text-sm text-gray-600">Athena Magic Brush</p>
-          <p className="text-lg font-semibold text-gray-900">Price 0.00001 ETH</p>
+          <p className="text-lg font-semibold text-gray-900">Price 0.00001 FIL</p>
           <button
             className="mt-2 rounded bg-dark text-white px-4 py-2 text-sm uppercase shadow-sm hover:bg-dark-hover"
             onClick={()=>handleMint('0x5a3E9aBBdAC13bcC5706F5E631873D50a0C578d1')}
@@ -247,7 +247,7 @@ const ProfileHomePage = ({
             />
           </div>
           <p className="mb-2 text-sm text-gray-600">Apollo Magic Brush</p>
-          <p className="text-lg font-semibold text-gray-900">Price 0.00001 ETH</p>
+          <p className="text-lg font-semibold text-gray-900">Price 0.00001 FIL</p>
           <button
             className="mt-2 rounded bg-dark text-white px-4 py-2 text-sm uppercase shadow-sm hover:bg-dark-hover"
             onClick={()=>handleMint('0xEbf97db6D67e935AF29F3634d1A4EC6363DDC542')}
@@ -267,7 +267,7 @@ const ProfileHomePage = ({
             />
           </div>
           <p className="mb-2 text-sm text-gray-600">Artemis Magic Brush</p>
-          <p className="text-lg font-semibold text-gray-900">Price 0.00001 ETH</p>
+          <p className="text-lg font-semibold text-gray-900">Price 0.00001 FIL</p>
           <button
             className="mt-2 rounded bg-dark text-white px-4 py-2 text-sm uppercase shadow-sm hover:bg-dark-hover"
             onClick={()=>handleMint('0xC37ACc45Fa214b32bE9672259841D99Af78Ef798')}
@@ -287,7 +287,7 @@ const ProfileHomePage = ({
             />
           </div>
           <p className="mb-2 text-sm text-gray-600">Ares Magic Brush</p>
-          <p className="text-lg font-semibold text-gray-900">Price 0.00001 ETH</p>
+          <p className="text-lg font-semibold text-gray-900">Price 0.00001 FIL</p>
           <button
             className="mt-2 rounded bg-dark text-white px-4 py-2 text-sm uppercase shadow-sm hover:bg-dark-hover"
             onClick={()=>handleMint('0xEDbA53644b45c64cACd7d85474B13Bc4660b7b6f')}
@@ -307,7 +307,7 @@ const ProfileHomePage = ({
             />
           </div>
           <p className="mb-2 text-sm text-gray-600">Achilles Magic Brush</p>
-          <p className="text-lg font-semibold text-gray-900">Price 0.00001 ETH</p>
+          <p className="text-lg font-semibold text-gray-900">Price 0.00001 FIL</p>
           <button
             className="mt-2 rounded bg-dark text-white px-4 py-2 text-sm uppercase shadow-sm hover:bg-dark-hover"
             onClick={()=>handleMint('0x0584eD38ae14d5e99B43CCcC3F30f1c8c6cB13Ab')}
@@ -327,7 +327,7 @@ const ProfileHomePage = ({
             />
           </div>
           <p className="mb-2 text-sm text-gray-600">Aphrodite Magic Brush</p>
-          <p className="text-lg font-semibold text-gray-900">Price 0.00001 ETH</p>
+          <p className="text-lg font-semibold text-gray-900">Price 0.00001 FIL</p>
           <button
             className="mt-2 rounded bg-dark text-white px-4 py-2 text-sm uppercase shadow-sm hover:bg-dark-hover"
             onClick={()=>handleMint('0x01D0Acab311919428B288360dF97396Ac31088dd')}
@@ -347,7 +347,7 @@ const ProfileHomePage = ({
             />
           </div>
           <p className="mb-2 text-sm text-gray-600">Dionysus Magic Brush</p>
-          <p className="text-lg font-semibold text-gray-900">Price 0.00001 ETH</p>
+          <p className="text-lg font-semibold text-gray-900">Price 0.00001 FIL</p>
           <button
             className="mt-2 rounded bg-dark text-white px-4 py-2 text-sm uppercase shadow-sm hover:bg-dark-hover"
             onClick={()=>handleMint('0xCc2ee87A7f10d76aB4dbF0E2b19d056df7ba0057')}
@@ -367,7 +367,7 @@ const ProfileHomePage = ({
             />
           </div>
           <p className="mb-2 text-sm text-gray-600">Hades Magic Brush</p>
-          <p className="text-lg font-semibold text-gray-900">Price 0.00001 ETH</p>
+          <p className="text-lg font-semibold text-gray-900">Price 0.00001 FIL</p>
           <button
             className="mt-2 rounded bg-dark text-white px-4 py-2 text-sm uppercase shadow-sm hover:bg-dark-hover"
             onClick={()=>handleMint('0x3d500f4d7c9a0578bca1f1437a62117e408c57b7')}
@@ -387,7 +387,7 @@ const ProfileHomePage = ({
             />
           </div>
           <p className="mb-2 text-sm text-gray-600">Hephaestus Magic Brush</p>
-          <p className="text-lg font-semibold text-gray-900">Price 0.00001 ETH</p>
+          <p className="text-lg font-semibold text-gray-900">Price 0.00001 FIL</p>
           <button
             className="mt-2 rounded bg-dark text-white px-4 py-2 text-sm uppercase shadow-sm hover:bg-dark-hover"
             onClick={()=>handleMint('0xaE58C2a7CA71A87fcbD7d1b07bC393892464B832')}
@@ -407,7 +407,7 @@ const ProfileHomePage = ({
             />
           </div>
           <p className="mb-2 text-sm text-gray-600">Hercules Magic Brush</p>
-          <p className="text-lg font-semibold text-gray-900">Price 0.00001 ETH</p>
+          <p className="text-lg font-semibold text-gray-900">Price 0.00001 FIL</p>
           <button
             className="mt-2 rounded bg-dark text-white px-4 py-2 text-sm uppercase shadow-sm hover:bg-dark-hover"
             onClick={()=>handleMint('0x8BdCE8E822d6f5be519962F22a088cc62EED653B')}
@@ -427,7 +427,7 @@ const ProfileHomePage = ({
             />
           </div>
           <p className="mb-2 text-sm text-gray-600">Hermes Magic Brush</p>
-          <p className="text-lg font-semibold text-gray-900">Price 0.00001 ETH</p>
+          <p className="text-lg font-semibold text-gray-900">Price 0.00001 FIL</p>
           <button
             className="mt-2 rounded bg-dark text-white px-4 py-2 text-sm uppercase shadow-sm hover:bg-dark-hover"
             onClick={()=>handleMint('0x22bE2ABD2061B16EC23Ef77B32c6A889801bC36A')}
@@ -447,7 +447,7 @@ const ProfileHomePage = ({
             />
           </div>
           <p className="mb-2 text-sm text-gray-600">Hestia Magic Brush</p>
-          <p className="text-lg font-semibold text-gray-900">Price 0.00001 ETH</p>
+          <p className="text-lg font-semibold text-gray-900">Price 0.00001 FIL</p>
           <button
             className="mt-2 rounded bg-dark text-white px-4 py-2 text-sm uppercase shadow-sm hover:bg-dark-hover"
             onClick={()=>handleMint('0x192dc5C70946B89252b12838189c6823d9d69d27')}
@@ -467,7 +467,7 @@ const ProfileHomePage = ({
             />
           </div>
           <p className="mb-2 text-sm text-gray-600">Odysseus Magic Brush</p>
-          <p className="text-lg font-semibold text-gray-900">Price 0.00001 ETH</p>
+          <p className="text-lg font-semibold text-gray-900">Price 0.00001 FIL</p>
           <button
             className="mt-2 rounded bg-dark text-white px-4 py-2 text-sm uppercase shadow-sm hover:bg-dark-hover"
             onClick={()=>handleMint('0x0eaa8131cb32d1f5595b27293aed52009c9f3818')}
@@ -487,7 +487,7 @@ const ProfileHomePage = ({
             />
           </div>
           <p className="mb-2 text-sm text-gray-600">Persephone Magic Brush</p>
-          <p className="text-lg font-semibold text-gray-900">Price 0.00001 ETH</p>
+          <p className="text-lg font-semibold text-gray-900">Price 0.00001 FIL</p>
           <button
             className="mt-2 rounded bg-dark text-white px-4 py-2 text-sm uppercase shadow-sm hover:bg-dark-hover"
             onClick={()=>handleMint('0xE1b7E7d9B3f3F3082367F23Bde1e79f0A2809A2C')}
@@ -507,7 +507,7 @@ const ProfileHomePage = ({
             />
           </div>
           <p className="mb-2 text-sm text-gray-600">Prometheus Magic Brush</p>
-          <p className="text-lg font-semibold text-gray-900">Price 0.00001 ETH</p>
+          <p className="text-lg font-semibold text-gray-900">Price 0.00001 FIL</p>
           <button
             className="mt-2 rounded bg-dark text-white px-4 py-2 text-sm uppercase shadow-sm hover:bg-dark-hover"
             onClick={()=>handleMint('0xb89f86eDed878952FB3ec2AE1BDcff01D014C5b2')}
@@ -527,7 +527,7 @@ const ProfileHomePage = ({
             />
           </div>
           <p className="mb-2 text-sm text-gray-600">Heraclitus Magic Brush</p>
-          <p className="text-lg font-semibold text-gray-900">Price 0.00001 ETH</p>
+          <p className="text-lg font-semibold text-gray-900">Price 0.00001 FIL</p>
           <button
             className="mt-2 rounded bg-dark text-white px-4 py-2 text-sm uppercase shadow-sm hover:bg-dark-hover"
             onClick={()=>handleMint('0xCa35841afBb1c344B1Ac5A0e6f5C9892929AD8b6')}

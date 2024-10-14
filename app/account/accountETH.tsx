@@ -145,7 +145,7 @@ const ProfileHomePage = ({
             />
           </div>
           <p className="mb-2 text-sm text-gray-600">Zeus Magic Brush</p>
-          <p className="text-lg font-semibold text-gray-900">Price 0.00001 FIL</p>
+          <p className="text-lg font-semibold text-gray-900">Price 0.00001 ETH</p>
           <button
             className="mt-2 rounded bg-dark text-white px-4 py-2 text-sm uppercase shadow-sm hover:bg-dark-hover"
             onClick={()=>handleMint('0x255a5DD65deA76DD72B779C015fac67f0443C5b8')}
@@ -166,7 +166,7 @@ const ProfileHomePage = ({
             />
           </div>
           <p className="mb-2 text-sm text-gray-600">Hera Magic Brush </p>
-          <p className="text-lg font-semibold text-gray-900">Price 0.00001 FIL</p>
+          <p className="text-lg font-semibold text-gray-900">Price 0.00001 ETH</p>
           <button
             className="mt-2 rounded bg-dark text-white px-4 py-2 text-sm uppercase shadow-sm hover:bg-dark-hover"
             onClick={()=>handleMint('0x246A16240fcbd35AaF45C3eF111917E4A9161d09')}
