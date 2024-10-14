@@ -84,9 +84,9 @@ const ProfileHomePage = ({
       }
     
       const networkId = await web3.eth.net.getId();
-      const FilecoinMainnetID = 314      ; // Filecoin Mainnet ID
-      if (networkId !== FilecoinMainnetID) {
-        window.alert('Please connect to the Filecoin network in MetaMask.');
+      const ScrollMainnetID = 534352      ; // Scroll Mainnet ID
+      if (networkId !== ScrollMainnetID) {
+        window.alert('Please connect to the Scroll network in MetaMask.');
         return;
       }
     
@@ -95,7 +95,7 @@ const ProfileHomePage = ({
       const default_ref_address = '0x75224eD2b99A8e09a374bE4aA0fa1641a12323aC';
       const contract = new web3.eth.Contract(JSON.parse(agzeusabi), contractAddress);
     
-      // Assume the minting price is 0.00001 FIL (you should adjust this according to your contract)
+      // Assume the minting price is 0.00001 ETH (you should adjust this according to your contract)
       const value = web3.utils.toWei('0.00001', 'ether');
     
       try {
@@ -148,7 +148,7 @@ const ProfileHomePage = ({
           <p className="text-lg font-semibold text-gray-900">Price 0.00001 FIL</p>
           <button
             className="mt-2 rounded bg-dark text-white px-4 py-2 text-sm uppercase shadow-sm hover:bg-dark-hover"
-            onClick={()=>handleMint('0x3A693667835d8eF488752d712342C8fBa594CfD9')}
+            onClick={()=>handleMint('0x255a5DD65deA76DD72B779C015fac67f0443C5b8')}
           >
             Mint
           </button>
@@ -169,7 +169,7 @@ const ProfileHomePage = ({
           <p className="text-lg font-semibold text-gray-900">Price 0.00001 FIL</p>
           <button
             className="mt-2 rounded bg-dark text-white px-4 py-2 text-sm uppercase shadow-sm hover:bg-dark-hover"
-            onClick={()=>handleMint('0x47744D5aB77E7F9F9206214944A13139484BAd1b')}
+            onClick={()=>handleMint('0x246A16240fcbd35AaF45C3eF111917E4A9161d09')}
           >
             Mint
           </button>
@@ -190,7 +190,7 @@ const ProfileHomePage = ({
           <p className="text-lg font-semibold text-gray-900">Price 0.00001 ETH</p>
           <button
             className="mt-2 rounded bg-dark text-white px-4 py-2 text-sm uppercase shadow-sm hover:bg-dark-hover"
-            onClick={()=>handleMint('0x09B7c0380EcD9343DE07aD364c1956c09144D07f')}
+            onClick={()=>handleMint('0x5a3E9aBBdAC13bcC5706F5E631873D50a0C578d1')}
           >
             Mint
           </button>
@@ -210,7 +210,7 @@ const ProfileHomePage = ({
           <p className="text-lg font-semibold text-gray-900">Price 0.00001 ETH</p>
           <button
             className="mt-2 rounded bg-dark text-white px-4 py-2 text-sm uppercase shadow-sm hover:bg-dark-hover"
-            onClick={()=>handleMint('0xF855D299FA5160036475F4fD76bF253837C1EBA2')}
+            onClick={()=>handleMint('0xCa35841afBb1c344B1Ac5A0e6f5C9892929AD8b6')}
           >
             Mint
           </button>
@@ -230,7 +230,7 @@ const ProfileHomePage = ({
           <p className="text-lg font-semibold text-gray-900">Price 0.00001 ETH</p>
           <button
             className="mt-2 rounded bg-dark text-white px-4 py-2 text-sm uppercase shadow-sm hover:bg-dark-hover"
-            onClick={()=>handleMint('0x5a3E9aBBdAC13bcC5706F5E631873D50a0C578d1')}
+            onClick={()=>handleMint('0x3ea5c053F1A3C276d8A1685Ab8b7aF74573Fc4D9')}
           >
             Mint
           </button>
@@ -250,7 +250,7 @@ const ProfileHomePage = ({
           <p className="text-lg font-semibold text-gray-900">Price 0.00001 ETH</p>
           <button
             className="mt-2 rounded bg-dark text-white px-4 py-2 text-sm uppercase shadow-sm hover:bg-dark-hover"
-            onClick={()=>handleMint('0xEbf97db6D67e935AF29F3634d1A4EC6363DDC542')}
+            onClick={()=>handleMint('0xCc2ee87A7f10d76aB4dbF0E2b19d056df7ba0057')}
           >
             Mint
           </button>
@@ -270,7 +270,7 @@ const ProfileHomePage = ({
           <p className="text-lg font-semibold text-gray-900">Price 0.00001 ETH</p>
           <button
             className="mt-2 rounded bg-dark text-white px-4 py-2 text-sm uppercase shadow-sm hover:bg-dark-hover"
-            onClick={()=>handleMint('0xC37ACc45Fa214b32bE9672259841D99Af78Ef798')}
+            onClick={()=>handleMint('0xF855D299FA5160036475F4fD76bF253837C1EBA2')}
           >
             Mint
           </button>
@@ -290,7 +290,7 @@ const ProfileHomePage = ({
           <p className="text-lg font-semibold text-gray-900">Price 0.00001 ETH</p>
           <button
             className="mt-2 rounded bg-dark text-white px-4 py-2 text-sm uppercase shadow-sm hover:bg-dark-hover"
-            onClick={()=>handleMint('0xEDbA53644b45c64cACd7d85474B13Bc4660b7b6f')}
+            onClick={()=>handleMint('0x3D500F4D7C9a0578bCa1f1437a62117E408C57B7')}
           >
             Mint
           </button>
@@ -310,7 +310,7 @@ const ProfileHomePage = ({
           <p className="text-lg font-semibold text-gray-900">Price 0.00001 ETH</p>
           <button
             className="mt-2 rounded bg-dark text-white px-4 py-2 text-sm uppercase shadow-sm hover:bg-dark-hover"
-            onClick={()=>handleMint('0x0584eD38ae14d5e99B43CCcC3F30f1c8c6cB13Ab')}
+            onClick={()=>handleMint('0x01D0Acab311919428B288360dF97396Ac31088dd')}
           >
             Mint
           </button>
@@ -330,7 +330,7 @@ const ProfileHomePage = ({
           <p className="text-lg font-semibold text-gray-900">Price 0.00001 ETH</p>
           <button
             className="mt-2 rounded bg-dark text-white px-4 py-2 text-sm uppercase shadow-sm hover:bg-dark-hover"
-            onClick={()=>handleMint('0x01D0Acab311919428B288360dF97396Ac31088dd')}
+            onClick={()=>handleMint('0xEDbA53644b45c64cACd7d85474B13Bc4660b7b6f')}
           >
             Mint
           </button>
@@ -350,7 +350,7 @@ const ProfileHomePage = ({
           <p className="text-lg font-semibold text-gray-900">Price 0.00001 ETH</p>
           <button
             className="mt-2 rounded bg-dark text-white px-4 py-2 text-sm uppercase shadow-sm hover:bg-dark-hover"
-            onClick={()=>handleMint('0xCc2ee87A7f10d76aB4dbF0E2b19d056df7ba0057')}
+            onClick={()=>handleMint('0x8BdCE8E822d6f5be519962F22a088cc62EED653B')}
           >
             Mint
           </button>
@@ -370,7 +370,7 @@ const ProfileHomePage = ({
           <p className="text-lg font-semibold text-gray-900">Price 0.00001 ETH</p>
           <button
             className="mt-2 rounded bg-dark text-white px-4 py-2 text-sm uppercase shadow-sm hover:bg-dark-hover"
-            onClick={()=>handleMint('0x3d500f4d7c9a0578bca1f1437a62117e408c57b7')}
+            onClick={()=>handleMint('0x22bE2ABD2061B16EC23Ef77B32c6A889801bC36A')}
           >
             Mint
           </button>
@@ -390,7 +390,7 @@ const ProfileHomePage = ({
           <p className="text-lg font-semibold text-gray-900">Price 0.00001 ETH</p>
           <button
             className="mt-2 rounded bg-dark text-white px-4 py-2 text-sm uppercase shadow-sm hover:bg-dark-hover"
-            onClick={()=>handleMint('0xaE58C2a7CA71A87fcbD7d1b07bC393892464B832')}
+            onClick={()=>handleMint('0xf3bf9c681CEBB9Fe47D2D218A0D937ae273af47e')}
           >
             Mint
           </button>
@@ -410,7 +410,7 @@ const ProfileHomePage = ({
           <p className="text-lg font-semibold text-gray-900">Price 0.00001 ETH</p>
           <button
             className="mt-2 rounded bg-dark text-white px-4 py-2 text-sm uppercase shadow-sm hover:bg-dark-hover"
-            onClick={()=>handleMint('0x8BdCE8E822d6f5be519962F22a088cc62EED653B')}
+            onClick={()=>handleMint('0xE1b7E7d9B3f3F3082367F23Bde1e79f0A2809A2C')}
           >
             Mint
           </button>
@@ -430,7 +430,7 @@ const ProfileHomePage = ({
           <p className="text-lg font-semibold text-gray-900">Price 0.00001 ETH</p>
           <button
             className="mt-2 rounded bg-dark text-white px-4 py-2 text-sm uppercase shadow-sm hover:bg-dark-hover"
-            onClick={()=>handleMint('0x22bE2ABD2061B16EC23Ef77B32c6A889801bC36A')}
+            onClick={()=>handleMint('0xaE58C2a7CA71A87fcbD7d1b07bC393892464B832')}
           >
             Mint
           </button>
@@ -450,7 +450,7 @@ const ProfileHomePage = ({
           <p className="text-lg font-semibold text-gray-900">Price 0.00001 ETH</p>
           <button
             className="mt-2 rounded bg-dark text-white px-4 py-2 text-sm uppercase shadow-sm hover:bg-dark-hover"
-            onClick={()=>handleMint('0x192dc5C70946B89252b12838189c6823d9d69d27')}
+            onClick={()=>handleMint('0x09B7c0380EcD9343DE07aD364c1956c09144D07f')}
           >
             Mint
           </button>
@@ -470,7 +470,7 @@ const ProfileHomePage = ({
           <p className="text-lg font-semibold text-gray-900">Price 0.00001 ETH</p>
           <button
             className="mt-2 rounded bg-dark text-white px-4 py-2 text-sm uppercase shadow-sm hover:bg-dark-hover"
-            onClick={()=>handleMint('0x0eaa8131cb32d1f5595b27293aed52009c9f3818')}
+            onClick={()=>handleMint('0xb89f86eDed878952FB3ec2AE1BDcff01D014C5b2')}
           >
             Mint
           </button>
@@ -490,7 +490,7 @@ const ProfileHomePage = ({
           <p className="text-lg font-semibold text-gray-900">Price 0.00001 ETH</p>
           <button
             className="mt-2 rounded bg-dark text-white px-4 py-2 text-sm uppercase shadow-sm hover:bg-dark-hover"
-            onClick={()=>handleMint('0xE1b7E7d9B3f3F3082367F23Bde1e79f0A2809A2C')}
+            onClick={()=>handleMint('0xEa08B541442F3FdFE95f47858246af846c1653d3')}
           >
             Mint
           </button>
@@ -510,7 +510,7 @@ const ProfileHomePage = ({
           <p className="text-lg font-semibold text-gray-900">Price 0.00001 ETH</p>
           <button
             className="mt-2 rounded bg-dark text-white px-4 py-2 text-sm uppercase shadow-sm hover:bg-dark-hover"
-            onClick={()=>handleMint('0xb89f86eDed878952FB3ec2AE1BDcff01D014C5b2')}
+            onClick={()=>handleMint('0xA7ADb2eA222e5e89Ba70AaDcE13fFED3DEA2206C')}
           >
             Mint
           </button>
@@ -530,7 +530,7 @@ const ProfileHomePage = ({
           <p className="text-lg font-semibold text-gray-900">Price 0.00001 ETH</p>
           <button
             className="mt-2 rounded bg-dark text-white px-4 py-2 text-sm uppercase shadow-sm hover:bg-dark-hover"
-            onClick={()=>handleMint('0xCa35841afBb1c344B1Ac5A0e6f5C9892929AD8b6')}
+            onClick={()=>handleMint('0x192dc5C70946B89252b12838189c6823d9d69d27')}
           >
             Mint
           </button>
