@@ -28,7 +28,7 @@ export function UserNav({
   const { signOut } = useClerk();
   const router = useRouter();
 
-  function formatWallet(walletAddress) {
+  function formatWallet(walletAddress: string) {
     if (!walletAddress || walletAddress.length < 14) {
       return walletAddress; // 如果地址长度不足，直接返回原始地址
     }

@@ -1,6 +1,6 @@
 import { api } from '@/convex/_generated/api';
 import { preloadQuery } from 'convex/nextjs';
-import ManageAccountItem from './account';
+import ManageAccountItem from './accountFIL';
 import { getAuthToken } from '../auth';
 
 const ServerDashboardHomePage = async () => {
