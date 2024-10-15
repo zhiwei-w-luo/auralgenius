@@ -133,25 +133,25 @@ const ProfileHomePage = ({
       
       <div className="mx-auto w-4/5 mb-10 mt-4">
       <div className="grid grid-cols-4 gap-4">
-        {/* Manually creating each card */}
-        <div className="flex flex-col items-center bg-white rounded-lg border border-gray-300 shadow-md p-4">
-          <div className="mb-2">
-            <Image
-              src="/images/brush/Zeus.png"
-              alt="NFT Example"
-              width={300}
-              height={300}
-              className="rounded-lg"
-            />
-          </div>
-          <p className="mb-2 text-sm text-gray-600">Zeus Magic Brush</p>
-          <p className="text-lg font-semibold text-gray-900">Price 0.00001 FIL</p>
-          <button
-            className="mt-2 rounded bg-dark text-white px-4 py-2 text-sm uppercase shadow-sm hover:bg-dark-hover"
-            onClick={()=>handleMint('0x3A693667835d8eF488752d712342C8fBa594CfD9')}
-          >
-            Mint
-          </button>
+          {/* Manually creating each card */}
+          <div className="flex flex-col items-center bg-white rounded-lg border border-gray-300 shadow-md p-4">
+            <div className="mb-2">
+              <Image
+                src="/images/brush/Zeus.png"
+                alt="NFT Example"
+                width={300}
+                height={300}
+                className="rounded-lg"
+              />
+            </div>
+            <p className="mb-2 text-sm text-gray-600">Zeus Magic Brush</p>
+            <p className="text-lg font-semibold text-gray-900">Price 0.00001 FIL</p>
+            <button
+              className="mt-2 rounded bg-dark text-white px-4 py-2 text-sm uppercase shadow-sm hover:bg-dark-hover"
+              onClick={()=>handleMint('0x3A693667835d8eF488752d712342C8fBa594CfD9')}
+            >
+              Mint
+            </button>
         </div>
 
         {/* Repeat the block manually for each item from #2 to #20 */}

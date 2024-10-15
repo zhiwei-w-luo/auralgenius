@@ -9,6 +9,7 @@ const ServerDashboardHomePage = async () => {
   const preloadedNotes = await preloadQuery(api.notes.getNotes, {}, { token });
 
   return <ManageAccountItem preloadedNotes={preloadedNotes} />;
+
 };
 
 export default ServerDashboardHomePage;
