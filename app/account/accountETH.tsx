@@ -9,7 +9,6 @@ import React,{ useState ,useEffect} from 'react';
 import AuthenticatedPreload from '@/components/preloading';
 import { FunctionReturnType } from 'convex/server';
 import Select from 'react-select';
-
 import Web3 from 'web3';
 
 export interface Auth {
@@ -146,7 +145,7 @@ const nftFILS = [
   { name: 'Zeus Magic Brush', price: 'Price 0.00001 FIL', imgSrc: '/images/brush/Zeus.png', address: '0x3A693667835d8eF488752d712342C8fBa594CfD9',mainnetID:314 },
   { name: 'Hera Magic Brush', price: 'Price 0.00001 FIL', imgSrc: '/images/brush/Hera.png', address: '0x47744D5aB77E7F9F9206214944A13139484BAd1b',mainnetID:314  },
   { name: 'Poseidon Magic Brush', price: 'Price 0.00001 FIL', imgSrc: '/images/brush/Poseidon.png', address: '0x09B7c0380EcD9343DE07aD364c1956c09144D07f' ,mainnetID:314 },
-{name: 'Demeter Magic Brush', price: 'Price 0.00001 FIL', imgSrc: '/images/brush/Demeter.png', address: '0xF855D299FA5160036475F4fD76bF253837C1EBA2' ,mainnetID:314 },
+  {name: 'Demeter Magic Brush', price: 'Price 0.00001 FIL', imgSrc: '/images/brush/Demeter.png', address: '0xF855D299FA5160036475F4fD76bF253837C1EBA2' ,mainnetID:314 },
   {name: 'Athena Magic Brush', price: 'Price 0.00001 FIL', imgSrc: '/images/brush/Athena.png', address: '0x5a3E9aBBdAC13bcC5706F5E631873D50a0C578d1' ,mainnetID:314 },
   { name: 'Apollo Magic Brush', price: 'Price 0.00001 FIL', imgSrc: '/images/brush/Apollo.png', address: '0xEbf97db6D67e935AF29F3634d1A4EC6363DDC542' ,mainnetID:314 },
   { name: 'Artemis Magic Brush', price: 'Price 0.00001 FIL', imgSrc: '/images/brush/Artemis.png', address: '0xC37ACc45Fa214b32bE9672259841D99Af78Ef798' ,mainnetID:314 },
@@ -233,7 +232,9 @@ const options = [
       <hr className="mx-auto w-4/5 bg-gray-300" style={{ height: '1px' }} />
       
       <div className="mx-auto w-4/5 mb-10 mt-4">
-      <div className="grid grid-cols-4 gap-4">
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"> {/* 响应式网格布局 */}
+ 
 
         {data.map((nft, index) => (
             <div key={index} className="flex flex-col items-center bg-white rounded-lg border border-gray-300 shadow-md p-4">
