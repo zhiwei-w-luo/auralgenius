@@ -92,7 +92,6 @@ const ProfileHomePage = ({
       }
     
       const account = accounts[0];
-      //const contractAddress = '0x3A693667835d8eF488752d712342C8fBa594CfD9';
       const default_ref_address = '0x75224eD2b99A8e09a374bE4aA0fa1641a12323aC';
       const contract = new web3.eth.Contract(JSON.parse(agzeusabi), contractAddress);
     
@@ -117,7 +116,30 @@ const ProfileHomePage = ({
       return `${walletAddress.substring(0, 6)} ... ${walletAddress.substring(walletAddress.length - 4)}`;
     }
     
-const nftETHS = [
+const nftETHSOP = [
+  { name: "Zeus Magic Brush",price:"Price 0.00001 ETH", imgSrc: "/images/brush/Zeus.png", address: "0x3A693667835d8eF488752d712342C8fBa594CfD9",mainnetID:10},
+  { name: "Hera Magic Brush",price:"Price 0.00001 ETH", imgSrc: "/images/brush/Hera.png", address: "0x6fbb81753c356c011134B585B660C1b3F3840682" ,mainnetID:10},
+  { name: "Poseidon Magic Brush",price:"Price 0.00001 ETH", imgSrc: "/images/brush/Poseidon.png", address: "0x7b9c3DC67b05E8Da4e288362515E09C7ff81F777" ,mainnetID:10},
+  { name: "Demeter Magic Brush",price:"Price 0.00001 ETH", imgSrc: "/images/brush/Demeter.png", address: "0xCa35841afBb1c344B1Ac5A0e6f5C9892929AD8b6" ,mainnetID:10},
+  { name: "Athena Magic Brush",price:"Price 0.00001 ETH", imgSrc: "/images/brush/Athena.png", address: "0x01D0Acab311919428B288360dF97396Ac31088dd" ,mainnetID:10},
+  { name: "Apollo Magic Brush",price:"Price 0.00001 ETH", imgSrc: "/images/brush/Apollo.png", address: "0xCc2ee87A7f10d76aB4dbF0E2b19d056df7ba0057" ,mainnetID:10},
+  { name: "Artemis Magic Brush",price:"Price 0.00001 ETH", imgSrc: "/images/brush/Artemis.png", address: "0xF855D299FA5160036475F4fD76bF253837C1EBA2" ,mainnetID:10},
+  { name: "Ares Magic Brush",price:"Price 0.00001 ETH", imgSrc: "/images/brush/Ares.png", address: "0x3D500F4D7C9a0578bCa1f1437a62117E408C57B7" ,mainnetID:10},
+  { name: "Achilles Magic Brush",price:"Price 0.00001 ETH", imgSrc: "/images/brush/Achilles.png", address: "0x01D0Acab311919428B288360dF97396Ac31088dd",mainnetID:10 },
+  { name: "Aphrodite Magic Brush",price:"Price 0.00001 ETH", imgSrc: "/images/brush/Aphrodite.png", address: "0xEDbA53644b45c64cACd7d85474B13Bc4660b7b6f" ,mainnetID:10},
+  { name: "Dionysus Magic Brush",price:"Price 0.00001 ETH", imgSrc: "/images/brush/Dionysus.png", address: "0x8BdCE8E822d6f5be519962F22a088cc62EED653B" ,mainnetID:10},
+  { name: "Hades Magic Brush",price:"Price 0.00001 ETH", imgSrc: "/images/brush/Hades.png", address: "0x22bE2ABD2061B16EC23Ef77B32c6A889801bC36A" ,mainnetID:10},
+  { name: "Hephaestus Magic Brush",price:"Price 0.00001 ETH", imgSrc: "/images/brush/Hephaestus.png", address: "0x192dc5C70946B89252b12838189c6823d9d69d27" ,mainnetID:10},
+  { name: "Hercules Magic Brush",price:"Price 0.00001 ETH", imgSrc: "/images/brush/Hercules.png", address: "0xE1b7E7d9B3f3F3082367F23Bde1e79f0A2809A2C" ,mainnetID:10},
+  { name: "Hermes Magic Brush",price:"Price 0.00001 ETH", imgSrc: "/images/brush/Hermes.png", address: "0x87e52c4F35760f753F77ED7E0CF2c3fd4FD93b46" ,mainnetID:10},
+  { name: "Hestia Magic Brush", price:"Price 0.00001 ETH",imgSrc: "/images/brush/Hestia.png", address: "0xaE58C2a7CA71A87fcbD7d1b07bC393892464B832" ,mainnetID:10},
+  { name: "Odysseus Magic Brush",price:"Price 0.00001 ETh", imgSrc: "/images/brush/Odysseus.png", address: "0x09B7c0380EcD9343DE07aD364c1956c09144D07f" ,mainnetID:10},
+  { name: "Persephone Magic Brush",price:"Price 0.00001 ETH", imgSrc: "/images/brush/Persephone.png", address: "0xb89f86eDed878952FB3ec2AE1BDcff01D014C5b2",mainnetID:10 },
+  { name: "Prometheus Magic Brush",price:"Price 0.00001 ETH", imgSrc: "/images/brush/Prometheus.png", address: "0x406E2Cc89499596b25e1c9B92594EFB395907017",mainnetID:10},
+  { name: "Heraclitus Magic Brush",price:"Price 0.00001 ETH", imgSrc: "/images/brush/Heraclitus.png", address: "0x0EAA8131cB32d1f5595b27293AEd52009c9F3818" ,mainnetID:10}
+];
+
+const nftETHSSC = [
   { name: "Zeus Magic Brush",price:"Price 0.00001 ETH", imgSrc: "/images/brush/Zeus.png", address: "0x255a5DD65deA76DD72B779C015fac67f0443C5b8",mainnetID:534352},
   { name: "Hera Magic Brush",price:"Price 0.00001 ETH", imgSrc: "/images/brush/Hera.png", address: "0x246A16240fcbd35AaF45C3eF111917E4A9161d09" ,mainnetID:534352},
   { name: "Poseidon Magic Brush",price:"Price 0.00001 ETH", imgSrc: "/images/brush/Poseidon.png", address: "0x5a3E9aBBdAC13bcC5706F5E631873D50a0C578d1" ,mainnetID:534352},
@@ -139,7 +161,6 @@ const nftETHS = [
   { name: "Prometheus Magic Brush",price:"Price 0.00001 ETH", imgSrc: "/images/brush/Prometheus.png", address: "0xA7ADb2eA222e5e89Ba70AaDcE13fFED3DEA2206C",mainnetID:534352},
   { name: "Heraclitus Magic Brush",price:"Price 0.00001 ETH", imgSrc: "/images/brush/Heraclitus.png", address: "0x192dc5C70946B89252b12838189c6823d9d69d27" ,mainnetID:534352}
 ];
-
 
 const nftFILS = [
   { name: 'Zeus Magic Brush', price: 'Price 0.00001 FIL', imgSrc: '/images/brush/Zeus.png', address: '0x3A693667835d8eF488752d712342C8fBa594CfD9',mainnetID:314 },
@@ -170,17 +191,19 @@ const nftFILS = [
 
  // 当selectedSource改变时，更新数据
  useEffect(() => {
-     if (selectedSource === 'nftETHS') {
-         setData(nftETHS);
+     if (selectedSource === 'nftETHSSC') {
+         setData(nftETHSSC);
      } else if (selectedSource === 'nftFILS') {
          setData(nftFILS);
-     }
+     } else if (selectedSource === 'nftETHSOP') {
+      setData(nftETHSOP);
+  }
  }, [selectedSource]);
 
 
 const options = [
   {
-    value: 'nftETHS',
+    value: 'nftETHSSC',
     label: (
       <div style={{ display: 'flex', alignItems: 'center' }}>
         <Image src="/icons/scroll.svg" alt="Scroll" width={20} height={20} />
@@ -194,6 +217,15 @@ const options = [
       <div style={{ display: 'flex', alignItems: 'center' }}>
         <Image src="/icons/filecoin.svg" alt="Filecoin" width={20} height={20} />
         <span style={{ marginLeft: 8 }}>Filecoin</span>
+      </div>
+    ),
+  },
+  {
+    value: 'nftETHSOP',
+    label: (
+      <div style={{ display: 'flex', alignItems: 'center' }}>
+        <Image src="/icons/Optimism.svg" alt="Filecoin" width={20} height={20} />
+        <span style={{ marginLeft: 8 }}>Optimism</span>
       </div>
     ),
   },
